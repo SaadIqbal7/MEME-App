@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:paddingTop="5dp"
+	android:paddingEnd="12dp"
+	android:paddingStart="12dp"
+	android:paddingBottom="5dp"
+	android:background="@color/colorWhite">
+
+	<de.hdodenhof.circleimageview.CircleImageView
+		android:id="@+id/profile_picture"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:src="@drawable/rabbit" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="8dp"
+		android:paddingTop="10dp"
+		android:paddingBottom="0dp"
+		android:paddingStart="12dp"
+		android:paddingEnd="8dp"
+		android:background="@drawable/rounded_comment_item">
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="8"
+			android:gravity="center_vertical|start"
+			android:orientation="vertical">
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_gravity="top"
+				android:gravity="center"
+				android:layout_marginBottom="4dp">
+				<TextView
+					android:id="@+id/username_text_view"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:fontFamily="@font/kristen_itc"
+					android:text="saad_iqbal"
+					android:textColor="@color/primary_dark"
+					android:textSize="15sp"
+					tools:ignore="HardcodedText" />
+
+				<RelativeLayout
+					android:id="@+id/online_status"
+					android:layout_width="4dp"
+					android:layout_height="4dp"
+					android:layout_marginStart="5dp"
+					android:layout_marginEnd="5dp"
+					android:background="@drawable/rounded_seperator" />
+
+				<TextView
+					android:id="@+id/time_created_text_view"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:fontFamily="@font/kristen_itc"
+					android:text="1:02 pm mon 2/12"
+					android:textColor="@color/colorDarkGray"
+					android:textSize="12sp"
+					tools:ignore="HardcodedText" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/comment_text_view"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="14sp"
+				android:text="Saad iqbal"
+				android:textColor="@color/primary_dark"
+				android:fontFamily="@font/segoe_ui"/>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:baselineAligned="false"
+				android:orientation="horizontal">
+
+				<LinearLayout
+					android:id="@+id/upvotes_button"
+					style="@style/commentButton">
+
+					<ImageView
+						android:id="@+id/upvotes_image_view"
+						android:layout_width="20dp"
+						android:layout_height="20dp"
+						android:src="@drawable/empty_heart" />
+
+					<TextView
+						android:id="@+id/upvote_count_text_view"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="6dp"
+						android:fontFamily="@font/kristen_itc"
+						android:text="365"
+						android:textColor="@color/primary_dark"
+						android:textSize="14sp" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/downvotes_button"
+					style="@style/commentButton">
+
+					<ImageView
+						android:id="@+id/downvotes_image_view"
+						android:layout_width="20dp"
+						android:layout_height="20dp"
+						android:src="@drawable/empty_dislike" />
+
+					<TextView
+						android:id="@+id/downvote_count_text_view"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="6dp"
+						android:fontFamily="@font/kristen_itc"
+						android:text="10"
+						android:textColor="@color/primary_dark"
+						android:textSize="14sp" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/replies_button"
+					style="@style/commentButton">
+
+					<ImageView
+						android:layout_width="20dp"
+						android:layout_height="20dp"
+						android:src="@drawable/comment" />
+
+					<TextView
+						android:id="@+id/reply_count_text_view"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="6dp"
+						android:fontFamily="@font/kristen_itc"
+						android:text="23"
+						android:textColor="@color/primary_dark"
+						android:textSize="14sp" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+
+
+		<ImageView
+			android:id="@+id/comment_options"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:padding="8dp"
+			android:paddingEnd="0dp"
+			android:src="@drawable/ic_more_vert_black_24dp"
+			tools:ignore="RtlSymmetry" />
+
+	</LinearLayout>
+
+</LinearLayout>

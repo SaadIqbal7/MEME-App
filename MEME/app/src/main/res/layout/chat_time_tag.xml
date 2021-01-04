@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/colorWhite"
+	android:gravity="center">
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:background="@drawable/chat_time_tag_style"
+		android:elevation="3dp"
+		android:layout_margin="16dp">
+		<TextView
+			android:id="@+id/day_text_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Mon"
+			android:fontFamily="@font/segoe_ui"
+			android:textColor="@color/primary_dark"
+			android:textSize="12sp"
+			android:layout_marginEnd="4dp"
+			/>
+		<TextView
+			android:id="@+id/date_text_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="27"
+			android:fontFamily="@font/segoe_ui"
+			android:textColor="@color/primary_dark"
+			android:textSize="12sp"
+			android:layout_marginEnd="0dp"
+			/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="/"
+			android:fontFamily="@font/segoe_ui"
+			android:textColor="@color/primary_dark"
+			android:textSize="12sp"
+			android:layout_marginEnd="2dp"
+			/>
+		<TextView
+			android:id="@+id/month_text_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="11"
+			android:fontFamily="@font/segoe_ui"
+			android:textColor="@color/primary_dark"
+			android:textSize="12sp"
+			/>
+	</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:paddingStart="16dp"
+	android:paddingEnd="16dp"
+	android:paddingTop="8dp"
+	android:background="@drawable/no_border_list_item_style">
+	<TextView
+		android:id="@+id/message_text_view"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:maxWidth="300dp"
+		android:text="Hellow, my name is Saad Iqbal. I am a student at GIK Institute and yup, that's it."
+		android:textColor="@color/colorPrimaryDark"
+		android:fontFamily="@font/segoe_ui"
+		android:padding="12dp"
+		android:background="@drawable/sender_message_style"
+		android:layout_alignParentEnd="true" />
+	<View
+		android:id="@+id/chat_message_triangle"
+		android:layout_width="12dp"
+		android:layout_height="8dp"
+		android:background="@drawable/sender_message_triangle"
+		android:layout_below="@id/message_text_view"
+		android:layout_alignParentEnd="true"
+		android:layout_marginEnd="8dp"
+		android:layout_marginTop="-1dp"/>
+
+	<LinearLayout
+		android:id="@+id/time_sent_linear_layout"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentEnd="true"
+		android:layout_below="@id/chat_message_triangle"
+		android:layout_margin="1dp">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Time sent"
+			android:textSize="12sp"
+			android:textColor="@color/colorDarkGray"
+			android:layout_marginEnd="4dp"
+			tools:ignore="HardcodedText" />
+		<TextView
+			android:id="@+id/time_sent_text_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="10:30am"
+			android:textSize="12sp"
+			android:textColor="@color/colorDarkGray"/>
+	</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#F7FF00</color>
+	<color name="colorPrimaryDark">#000000</color>
+	<color name="colorAccent">#D81B60</color>
+	<color name="colorGreen">#00FF12</color>
+	<color name="colorDarkestGray">#595959</color>
+	<color name="colorDarkGray">#757575</color>
+	<color name="colorGray">#C4C4C4</color>
+	<color name="rippleGray">#D6D6D6</color>
+	<color name="colorLightGray">#E8E8E8</color>
+	<color name="colorLightestGray">#F3F3F3</color>
+	<color name="colorWhite">#FFFFFF</color>
+	<color name="iconColorPink">#F8305F</color>
+	<color name="iconColorOrange">#EC8800</color>
+	<color name="iconColorLightOrange">#FFBC53</color>
+	<color name="iconColorLightBlue">#5CA4DA</color>
+	<color name="iconColorLightGreen">#05CE2D</color>
+	<color name="iconLighterBlue">#00C9AF</color>
+	<color name="iconLightOrange">#FFA733</color>
+	<color name="iconDarkPink">#F40F78</color>
+
+	<color name="material_drawer_primary">#2196F3</color>
+	<color name="material_drawer_primary_dark">#1976D2</color>
+	<color name="material_drawer_primary_light">#BBDEFB</color>
+	<color name="material_drawer_accent">#FF4081</color>
+	<color name="material_drawer_background">#F9F9F9</color>
+</resources>

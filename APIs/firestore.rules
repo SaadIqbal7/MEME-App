@@ -1,0 +1,38 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+  // *Securiy rules are only specified if changes are to be made from front end*
+  	match /users/{userID} {
+    	// Allow read if user is authenticated and reading their own data
+    	allow read: if request.auth.uid != null
+      && request.auth.token.email == userID;
+      
+      // Do not allow user modfication from front end
+      allow write, update, delete: if false;
+    }
+    
+    match /defaultProfilePictures/{pictures}{
+    	// Anyone can read the default pictures
+    	allow read: if true;
+      
+      // Pictures are cannot be modified by anyone
+      allow write, update, delete: if false;
+    }
+    
+    match /conversations/{converstionId} {
+    	// Allow read if user is authenticated and reading their part of the conversation 
+    	// (each conversation has two instances)
+    	allow read: if request.auth.uid != null 
+      	&& request.auth.token.email == resource.data.sender;
+
+		// Do not allow conversation modification from front end
+		allow write, update, delete: if false;
+	}
+    
+    match /messages/{messageID} {
+    	allow read: if true;      
+      	// Cannot write from front end
+		allow write, update: if false;
+	}
+  }
+}

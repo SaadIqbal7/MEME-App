@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center"
+	android:background="@color/colorWhite"
+	android:padding="16dp"
+	tools:context=".LoginActivity"
+	android:scrollbarThumbHorizontal="@null"
+	android:scrollbarThumbVertical="@null">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_gravity="center"
+		android:orientation="vertical">
+		<TextView
+			style="@style/fontKristen"
+			android:textSize="22sp"
+			android:text="M.E.M.E"
+			android:textColor="@color/colorPrimaryDark"
+			android:layout_marginBottom="8dp"
+			tools:ignore="HardcodedText" />
+
+		<TextView
+			style="@style/fontKristen"
+			android:textSize="16sp"
+			android:text="Make Everything More Entertaining"
+			android:textColor="@color/colorPrimaryDark"
+			android:layout_marginBottom="24dp"
+			tools:ignore="HardcodedText" />
+
+		<TextView
+			style="@style/fontSegoeUI"
+			android:text="Please login below"
+			android:textSize="16sp"
+			android:textColor="@color/colorDarkestGray"
+			android:layout_marginBottom="24dp"
+			tools:ignore="HardcodedText" />
+
+		<EditText
+			android:id="@+id/email_edit_text"
+			style="@style/RoundEditText"
+			android:drawableStart="@drawable/baseline_face_black_24dp"
+			android:hint="E-mail address"
+			tools:ignore="HardcodedText"
+			android:importantForAutofill="no"
+			android:inputType="textEmailAddress" />
+
+		<EditText
+			android:id="@+id/password_edit_text"
+			style="@style/RoundEditText"
+			android:drawableStart="@drawable/baseline_lock_open_black_24dp"
+			android:hint="Password"
+			android:inputType="textPassword"
+			android:layout_marginBottom="0dp"
+			tools:ignore="HardcodedText"
+			android:importantForAutofill="no" />
+
+		<LinearLayout
+			android:id="@+id/forgot_password_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="left"
+			android:layout_marginLeft="16dp"
+			tools:ignore="RtlHardcoded"
+			android:layout_marginTop="8dp">
+			<TextView
+				style="@style/textButton"
+				android:text="Forgot password?"
+				android:layout_marginEnd="4dp"
+				android:textColor="@color/colorDarkestGray"
+				tools:ignore="HardcodedText" />
+
+			<TextView
+				style="@style/textButton"
+				android:text="Click here."
+				android:textStyle="bold"
+				android:textColor="@color/colorPrimaryDark"
+				tools:ignore="HardcodedText" />
+		</LinearLayout>
+
+		<Button
+			android:id="@+id/login_button"
+			style="@style/primaryLightButton"
+			android:text="Log in"
+			tools:ignore="HardcodedText" />
+
+		<LinearLayout
+			android:id="@+id/register_activity_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal">
+			<TextView
+				style="@style/textButton"
+				android:text="Don't have an account?"
+				android:layout_marginEnd="4dp"
+				android:textColor="@color/colorDarkestGray"
+				tools:ignore="HardcodedText" />
+
+			<TextView
+				style="@style/textButton"
+				android:text="Sign up."
+				android:textStyle="bold"
+				android:textColor="@color/colorPrimaryDark"
+				tools:ignore="HardcodedText" />
+		</LinearLayout>
+
+		<ProgressBar
+			android:id="@+id/progress_bar"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:visibility="gone"/>
+	</LinearLayout>
+
+</ScrollView>

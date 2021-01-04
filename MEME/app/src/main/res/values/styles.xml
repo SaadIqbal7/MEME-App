@@ -1,0 +1,169 @@
+<resources>
+
+	<!-- Base application theme. -->
+	<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<!-- Customize your theme here. -->
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorPrimaryDark</item>
+	</style>
+
+	<style name="AppTheme.NoActionBar">
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+	</style>
+
+	<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+	<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+	<style name="fontKristen">
+		<item name="android:fontFamily">@font/kristen_itc</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+
+	<style name="fontSegoeUI">
+		<item name="android:fontFamily">@font/segoe_ui</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+
+	<style name="RoundEditText">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginStart">16dp</item>
+		<item name="android:layout_marginEnd">16dp</item>
+		<item name="android:layout_marginBottom">16dp</item>
+		<item name="android:background">@drawable/rounded_edit_text</item>
+		<item name="android:padding">8dp</item>
+		<item name="android:drawablePadding">10dp</item>
+		<item name="android:paddingStart">16dp</item>
+		<item name="android:textColorHint">@color/colorDarkGray</item>
+		<item name="android:textSize">16sp</item>
+		<item name="android:fontFamily">@font/segoe_ui</item>
+	</style>
+
+	<style name="RoundSearchBar">
+		<item name="android:background">@drawable/rounded_edit_text</item>
+		<item name="android:padding">5dp</item>
+		<item name="android:textColorHint">@color/colorDarkGray</item>
+		<item name="android:textSize">16sp</item>
+		<item name="android:fontFamily">@font/segoe_ui</item>
+	</style>
+
+
+	<style name="primaryButton">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginEnd">16dp</item>
+		<item name="android:layout_marginStart">16dp</item>
+		<item name="android:layout_marginTop">24dp</item>
+		<item name="android:layout_marginBottom">24dp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">14sp</item>
+		<item name="android:fontFamily">@font/segoe_ui_bold</item>
+		<item name="android:textAllCaps">false</item>
+	</style>
+
+	<style name="primaryDarkButton" parent="primaryButton">
+		<item name="android:textColor">@color/colorWhite</item>
+		<item name="android:background">@drawable/rounded_button_black</item>
+	</style>
+
+	<style name="primaryLightButton" parent="primaryButton">
+		<item name="android:textColor">@color/colorPrimaryDark</item>
+		<item name="android:background">@drawable/rounded_button_yellow</item>
+	</style>
+
+	<style name="textButton">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">12sp</item>
+	</style>
+
+
+	<style name="datePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+		<item name="colorAccent">@color/colorPrimaryDark</item>
+		<item name="android:windowBackground">@color/colorWhite</item>
+		<item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+	</style>
+
+	<!-- style for tabs in TabLayout activities -->
+	<style name="tabTextStyle" parent="TextAppearance.Design.Tab">
+		<item name="android:fontFamily">@font/kristen_itc</item>
+		<item name="android:textSize">14sp</item>
+		<item name="textAllCaps">false</item>
+		<item name="android:textStyle">normal</item>
+	</style>
+
+	<style name="grayListItemStyle">
+		<item name="android:background">@drawable/gray_background_list_item</item>
+		<item name="android:padding">20dp</item>
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:gravity">center_vertical</item>
+	</style>
+
+	<style name="simpleEditTextStyle" parent="Widget.AppCompat.EditText">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginStart">10dp</item>
+		<item name="android:fontFamily">@font/segoe_ui</item>
+		<item name="android:inputType">text</item>
+		<item name="android:autofillHints">false</item>
+		<item name="android:textColor">@color/colorPrimaryDark</item>
+		<item name="android:textSize">20sp</item>
+	</style>
+
+	<!-- Override bottom sheet style and set its background to transparent-->
+	<style name="bottomSheetDialogStyle" parent="Theme.Design.Light.BottomSheetDialog">
+		<item name="bottomSheetStyle">@style/bottomSheetStyleWrapper</item>
+	</style>
+
+	<style name="bottomSheetStyleWrapper" parent="Widget.Design.BottomSheet.Modal">
+		<item name="android:background">@android:color/transparent</item>
+	</style>
+
+	<style name="header_progress_bar_style">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_centerVertical">true</item>
+		<item name="android:layout_alignParentEnd">true</item>
+		<item name="android:padding">16dp</item>
+		<item name="android:visibility">gone</item>
+	</style>
+
+	<style name="postTag">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:paddingStart">12dp</item>
+		<item name="android:paddingEnd">12dp</item>
+		<item name="android:paddingTop">2dp</item>
+		<item name="android:paddingBottom">2dp</item>
+		<item name="android:textColor">@color/primary_dark</item>
+		<item name="android:fontFamily">@font/segoe_ui</item>
+		<item name="android:background">@drawable/rounded_tag</item>
+		<item name="android:textSize">12sp</item>
+	</style>
+
+	<style name="postButton">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:gravity">center</item>
+		<item name="android:orientation">horizontal</item>
+		<item name="android:paddingTop">12dp</item>
+		<item name="android:paddingBottom">12dp</item>
+	</style>
+
+	<style name="commentButton">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:gravity">center</item>
+		<item name="android:orientation">horizontal</item>
+		<item name="android:paddingTop">12dp</item>
+		<item name="android:paddingBottom">12dp</item>
+		<item name="android:paddingStart">18dp</item>
+		<item name="android:paddingEnd">18dp</item>
+	</style>
+</resources>

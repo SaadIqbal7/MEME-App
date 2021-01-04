@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/border_list_item_style">
+
+	<de.hdodenhof.circleimageview.CircleImageView
+		android:id="@+id/profile_picture"
+		android:layout_width="90dp"
+		android:layout_height="90dp"
+		android:padding="16dp"/>
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:gravity="center_vertical"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/username_text_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="saad_iqbal"
+			android:textColor="@color/colorPrimaryDark"
+			android:textStyle="bold"
+			android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+			android:fontFamily="@font/segoe_ui"
+			android:padding="2dp"/>
+		<TextView
+			android:id="@+id/name_text_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Saad Iqbal"
+			android:textColor="@color/colorDarkestGray"
+			android:fontFamily="@font/segoe_ui"
+			android:padding="2dp"/>
+	</LinearLayout>
+
+</LinearLayout>

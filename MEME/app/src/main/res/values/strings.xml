@@ -1,0 +1,63 @@
+<resources>
+	<string name="app_name">MEME</string>
+
+	<string-array name="genders">
+		<item>Select Gender</item>
+		<item>Male</item>
+		<item>Female</item>
+		<item>Other</item>
+	</string-array>
+
+	<string-array name="categories">
+		<item>Select category</item>
+		<item>Animals</item>
+		<item>Anime &amp; Manga</item>
+		<item>Apex Legend</item>
+		<item>Awesome</item>
+		<item>Car</item>
+		<item>Comic</item>
+		<item>Cosplay</item>
+		<item>Crappy Design</item>
+		<item>Dark humour</item>
+		<item>Drawing, DIY &amp; Crafts</item>
+		<item>Food &amp; Drinks</item>
+		<item>Football</item>
+		<item>Fortnite</item>
+		<item>Funny</item>
+		<item>Game of Thrones</item>
+		<item>Gaming</item>
+		<item>Girl</item>
+		<item>Girl Celebrity</item>
+		<item>Guy</item>
+		<item>History</item>
+		<item>Horror</item>
+		<item>K-pop</item>
+		<item>Latest News</item>
+		<item>League of Legends</item>
+		<item>LEGO</item>
+		<item>Marvel &amp; DC</item>
+		<item>Meme</item>
+		<item>Music</item>
+		<item>NBA</item>
+		<item>NSFW</item>
+		<item>Overwatch</item>
+		<item>Pokemon</item>
+		<item>PUBG</item>
+		<item>Relationship</item>
+		<item>Savage</item>
+		<item>Satisfying</item>
+		<item>Science &amp; Tech</item>
+		<item>Sport</item>
+		<item>Star Wars</item>
+		<item>Teens Can Relate</item>
+		<item>Today I Wore</item>
+		<item>Travel &amp; Photography</item>
+		<item>Wallpaper</item>
+		<item>Warhammer</item>
+		<item>Wholesome</item>
+		<item>WTF</item>
+	</string-array>
+	<string name="title_activity_home">HomeActivity</string>
+	<string name="tab_text_1">Tab 1</string>
+	<string name="tab_text_2">Tab 2</string>
+</resources>

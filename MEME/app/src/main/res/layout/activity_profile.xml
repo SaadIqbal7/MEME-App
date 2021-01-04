@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".ProfileActivity">
+	<Toolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:contentInsetStart="0dp"
+		android:background="@color/colorPrimary">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:padding="0dp"
+				android:gravity="center_vertical">
+				<ImageView
+					android:id="@+id/back_button"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="16dp"
+					android:paddingEnd="8dp"
+					android:src="@drawable/ic_arrow_back_black_24dp"
+					tools:ignore="RtlSymmetry" />
+
+				<RelativeLayout
+					android:id="@+id/small_profile_picture_relative_layout"
+					android:layout_width="50dp"
+					android:layout_height="match_parent"
+					android:visibility="gone">
+					<de.hdodenhof.circleimageview.CircleImageView
+						android:id="@+id/small_profile_picture_image_view"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="6dp"/>
+					<RelativeLayout
+						android:id="@+id/online_status"
+						android:layout_width="10dp"
+						android:layout_height="10dp"
+						android:background="@drawable/rounded_green"
+						android:layout_margin="10dp"
+						android:layout_alignParentBottom="true"
+						android:layout_alignParentEnd="true" />
+				</RelativeLayout>
+
+				<TextView
+					android:id="@+id/username_text_view"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="6dp"
+					android:textColor="@color/colorPrimaryDark"
+					android:textSize="17sp"
+					android:fontFamily="@font/kristen_itc"/>
+			</LinearLayout>
+
+			<ProgressBar
+				android:id="@+id/progress_bar"
+				style="@style/header_progress_bar_style"/>
+
+			<ImageView
+				android:id="@+id/refresh_button"
+				style="@style/header_progress_bar_style"
+				android:src="@drawable/ic_autorenew_black_24dp"/>
+		</RelativeLayout>
+	</Toolbar>
+
+	<androidx.coordinatorlayout.widget.CoordinatorLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/toolbar">
+
+		<com.google.android.material.appbar.AppBarLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:theme="@style/AppTheme.AppBarOverlay">
+
+
+			<com.google.android.material.appbar.CollapsingToolbarLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="@color/colorPrimaryDark"
+					android:gravity="center"
+					android:padding="20dp"
+					android:orientation="vertical">
+
+					<RelativeLayout
+						android:id="@+id/profile_picture_relative_layout"
+						android:layout_width="110dp"
+						android:layout_height="110dp"
+						android:layout_margin="4dp"
+						android:visibility="gone">
+						<de.hdodenhof.circleimageview.CircleImageView
+							android:id="@+id/profile_picture_image_view"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							app:civ_border_color="@color/colorWhite"
+							app:civ_border_width="2dp"
+							android:scaleType="centerCrop"/>
+
+						<RelativeLayout
+							android:id="@+id/select_image_button"
+							android:layout_width="20dp"
+							android:layout_height="20dp"
+							android:background="@drawable/rounded_yellow"
+							android:layout_alignParentBottom="true"
+							android:layout_alignParentEnd="true"
+							android:layout_margin="8dp"
+							android:visibility="gone">
+							<ImageView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:src="@drawable/ic_add_black_24dp" />
+						</RelativeLayout>
+
+					</RelativeLayout>
+
+					<TextView
+						android:id="@+id/name_text_view"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textColor="@color/colorWhite"
+						android:fontFamily="@font/kristen_itc"
+						android:textSize="18sp"
+						android:layout_marginBottom="4dp"
+						android:visibility="gone"/>
+
+					<TextView
+						android:id="@+id/description_text_view"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="4dp"
+						android:textAlignment="center"
+						android:textColor="@color/colorWhite"
+						android:fontFamily="@font/kristen_itc"
+						android:textSize="18sp"
+						android:visibility="gone"/>
+
+					<LinearLayout
+						android:id="@+id/email_field"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center_vertical"
+						android:visibility="gone">
+						<ImageView
+							android:id="@+id/email_icon_image_view"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:src="@drawable/ic_email_black_24dp"/>
+						<TextView
+							android:id="@+id/email_text_view"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textColor="@color/colorWhite"
+							android:fontFamily="@font/kristen_itc"
+							android:textSize="14sp"
+							android:padding="4dp"/>
+					</LinearLayout>
+
+					<LinearLayout
+						android:id="@+id/location_field"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center_vertical"
+						android:visibility="gone">
+						<ImageView
+							android:id="@+id/location_icon_image_view"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:src="@drawable/ic_location_on_black_24dp" />
+						<TextView
+							android:id="@+id/location_text_view"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textColor="@color/colorWhite"
+							android:fontFamily="@font/kristen_itc"
+							android:textSize="14sp"
+							android:padding="4dp"/>
+					</LinearLayout>
+				</LinearLayout>
+
+				<androidx.appcompat.widget.Toolbar
+					android:layout_width="match_parent"
+					android:layout_height="?attr/actionBarSize"
+					android:visibility="gone"/>
+			</com.google.android.material.appbar.CollapsingToolbarLayout>
+
+			<com.google.android.material.tabs.TabLayout
+				android:id="@+id/tabs"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/colorLightestGray"
+				app:tabTextColor="@color/colorPrimaryDark"
+				app:tabTextAppearance="@style/tabTextStyle"
+				/>
+		</com.google.android.material.appbar.AppBarLayout>
+
+		<androidx.viewpager.widget.ViewPager
+			android:id="@+id/view_pager"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+		<com.google.android.material.floatingactionbutton.FloatingActionButton
+			android:id="@+id/create_message"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom|end"
+			android:layout_margin="@dimen/fab_margin"
+			app:srcCompat="@drawable/ic_create_white_24dp"
+			android:visibility="gone"/>
+
+	</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>

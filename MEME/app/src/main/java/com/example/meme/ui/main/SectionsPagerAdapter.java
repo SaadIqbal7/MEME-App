@@ -9,9 +9,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.meme.ProfileFragment;
-import com.example.meme.UserPostsFragment;
-import com.example.meme.UserUpvotedPostsFragment;
+import com.example.meme.fragment.ProfileFragment;
+import com.example.meme.fragment.UserPostsFragment;
+import com.example.meme.fragment.UserUpvotedPostsFragment;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to

@@ -5,7 +5,7 @@
 	android:layout_height="match_parent"
 	android:background="@color/colorWhite"
 	android:padding="16dp"
-	tools:context=".RegisterActivity"
+	tools:context=".activity.RegisterActivity"
 	android:scrollbarThumbHorizontal="@null"
 	android:scrollbarThumbVertical="@null">
 

@@ -9,8 +9,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.meme.HotPostsFragment;
-import com.example.meme.LatestPostsFragment;
+import com.example.meme.fragment.HotPostsFragment;
+import com.example.meme.fragment.LatestPostsFragment;
 
 import org.jetbrains.annotations.NotNull;
 

@@ -14,29 +14,29 @@
 		android:supportsRtl="true"
 		android:theme="@style/AppTheme"
 		tools:ignore="GoogleAppIndexingWarning">
-		<activity android:name=".UserScoreAndRankActivity" android:screenOrientation="portrait"/>
-		<activity android:name=".MemeGeneratorActivity" android:screenOrientation="portrait"/>
-		<activity android:name=".RepliesActivity" android:screenOrientation="portrait"/>
-		<activity android:name=".CommentActivity" />
-		<activity android:name=".UserSavedPostsActivity" android:screenOrientation="portrait"/>
-		<activity android:name=".ChangePasswordActivity" android:screenOrientation="portrait"/>
-		<activity android:name=".ForgotPasswordActivity" android:screenOrientation="portrait"/>
-		<activity android:name=".CreatePostActivity" android:screenOrientation="portrait"/>
-		<activity android:name=".ChatActivity" android:screenOrientation="portrait"/>
-		<activity android:name=".ConversationActivity" android:screenOrientation="portrait"/>
-		<activity android:name=".SearchActivity" android:screenOrientation="portrait"/>
+		<activity android:name=".activity.UserScoreAndRankActivity" android:screenOrientation="portrait"/>
+		<activity android:name=".activity.MemeGeneratorActivity" android:screenOrientation="portrait"/>
+		<activity android:name=".activity.RepliesActivity" android:screenOrientation="portrait"/>
+		<activity android:name=".activity.CommentActivity" />
+		<activity android:name=".activity.UserSavedPostsActivity" android:screenOrientation="portrait"/>
+		<activity android:name=".activity.ChangePasswordActivity" android:screenOrientation="portrait"/>
+		<activity android:name=".activity.ForgotPasswordActivity" android:screenOrientation="portrait"/>
+		<activity android:name=".activity.CreatePostActivity" android:screenOrientation="portrait"/>
+		<activity android:name=".activity.ChatActivity" android:screenOrientation="portrait"/>
+		<activity android:name=".activity.ConversationActivity" android:screenOrientation="portrait"/>
+		<activity android:name=".activity.SearchActivity" android:screenOrientation="portrait"/>
 		<activity
-			android:name=".HomeActivity"
+			android:name=".activity.HomeActivity"
 			android:label="@string/title_activity_home"
 			android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-		<activity android:name=".EditProfileActivity" android:screenOrientation="portrait"/>
+		<activity android:name=".activity.EditProfileActivity" android:screenOrientation="portrait"/>
 		<activity
-			android:name=".ProfileActivity"
+			android:name=".activity.ProfileActivity"
 			android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-		<activity android:name=".EmailConfirmationActivity" android:screenOrientation="portrait"/>
-		<activity android:name=".DetailsActivity" android:screenOrientation="portrait"/>
-		<activity android:name=".LoginActivity" android:screenOrientation="portrait"/>
-		<activity android:name=".RegisterActivity" android:screenOrientation="portrait">
+		<activity android:name=".activity.EmailConfirmationActivity" android:screenOrientation="portrait"/>
+		<activity android:name=".activity.DetailsActivity" android:screenOrientation="portrait"/>
+		<activity android:name=".activity.LoginActivity" android:screenOrientation="portrait"/>
+		<activity android:name=".activity.RegisterActivity" android:screenOrientation="portrait">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 

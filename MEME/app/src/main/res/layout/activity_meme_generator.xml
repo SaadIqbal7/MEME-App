@@ -4,7 +4,7 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	tools:context=".MemeGeneratorActivity"
+	tools:context=".activity.MemeGeneratorActivity"
 	android:background="@color/colorWhite">
 	<Toolbar
 		android:id="@+id/toolbar"

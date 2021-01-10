@@ -29,12 +29,28 @@ firebase deploy --only functions
 
 The MEME folder is an Android Studio project. 
 
-First open the project in Android Studio. Then go to container/Helpers class and in the <b>apiURL</b> add your Cloud Function URL:
+Firstly open your Firebase project console and register your application. Firebase will guide you on how to register the application. Take the google-service.json key and paste it in MEME/app folder.
+
+Then open the project in Android Studio. Open Tools->Firebase->Firestore and setup Firestore.
+
+Then go to container/Helpers class and in the <b>apiURL</b> add your Cloud Function URL:
 ```
 // https://xx-xx-xx-xx-xx.cloudfunctions.net
 public static String apiUrl = "YOUR CLOUD FUNCTION URL";
 ```
-Then build the project and download the APK to use the App :)
+
+If you want to access the Photo Editor (can see in the pictures below), go to this website:
+
+> https://photoeditorsdk.com/
+
+and start your free trial. After you create an account and answer their questions, register your android application and they'll give you a license key. MEME/app/src/main/assets/ folder:
+```
+MEME/app/src/main/assets/
+	...
+	pesdk_android_license
+	...
+```
+Then build your application and install it to use the application :).
 
 
 

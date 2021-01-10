@@ -1,6 +1,7 @@
 Social media application for creating and sharing memes.
 
 The APIs folder contains the Rest APIs created using Firebase Cloud Functions.
+The M.E.M.E.xd file is an Adobe Xd file which contains the UI design of the application.
 
 > Before setting up Firebase Cloud Functions, if you don't have a Firebase blaze plan you can use Node.js version 8 and upload the Cloud Functions. But this will expire after March 2021 so you have to buy a blaze plan in order to upload your Cloud Functions.
 
@@ -50,7 +51,7 @@ MEME/app/src/main/assets/
 	pesdk_android_license
 	...
 ```
-Then build your application and install it to use the application :).
+Then build your application and install it to use the application.
 
 
 

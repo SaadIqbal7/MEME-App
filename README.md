@@ -29,7 +29,7 @@ After all is setup, use the command below to upload Cloud Functions to Firebase.
 firebase deploy --only functions
 ```
 
-The MEME folder is an Android Studio project. 
+The MEME folder is the Android Studio project. 
 
 Firstly open your Firebase project console and register your application. Firebase will guide you on how to register the application. Take the google-service.json key and paste it in MEME/app folder.
 

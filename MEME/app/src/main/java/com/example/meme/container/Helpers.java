@@ -9,8 +9,8 @@ import java.io.File;
 import java.util.Objects;
 
 public class Helpers {
-	//	https://xx-xx-xx-xx-xx.cloudfunctions.net
-	public static  String apiUrl = "YOUR CLOUD FUNCTION URL";
+
+	public static  String apiUrl = "https://us-central1-meme-project-0.cloudfunctions.net";
 
 	// Convert day number into name of the day
 	public static String dayOfWeek(int number) {

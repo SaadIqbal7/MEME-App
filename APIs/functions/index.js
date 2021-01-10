@@ -9,8 +9,8 @@ const serviceAccount = require('./service-account.json');
 
 admin.initializeApp({
 	credential: admin.credential.cert(serviceAccount),
-	databaseURL: "https://meme-project-0.firebaseio.com",
-	storageBucket: "meme-project-0.appspot.com"
+	databaseURL: "YOUR DATABASE URL",
+	storageBucket: "YOUR STORAGE BUCKET URL"
 });
 
 // Initialize express app

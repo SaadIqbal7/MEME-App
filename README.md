@@ -1,3 +1,5 @@
+# MEME App
+
 Social media application for creating and sharing memes.
 
 The APIs folder contains the Rest APIs created using Firebase Cloud Functions.
